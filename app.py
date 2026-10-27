@@ -312,3 +312,12 @@ else:
     cols = st.columns(len(NAMES))
     for col, n in zip(cols, NAMES):
         col.image(structure_url(COMPOUNDS[n]["cid"]), caption=n if n != "Opium poppy" else "Opium poppy (morphine)")
+        st.markdown(
+    '<div style="margin-top:48px;padding:18px 0;border-top:1px solid rgba(70,230,200,.22);'
+    'text-align:center;line-height:1.7;">'
+    '<div style="font-size:.8rem;color:#7fa39d;letter-spacing:.12em;">DEVELOPED BY</div>'
+    '<div style="font:700 1.3rem Rajdhani,sans-serif;color:#35f0d0;">Rahul Verma</div>'
+    '<div style="font:500 1rem Rajdhani,sans-serif;color:#d7ece8;letter-spacing:.1em;">RA2611026050066</div>'
+    '</div>',
+    unsafe_allow_html=True,
+        )
